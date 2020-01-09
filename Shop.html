@@ -1,0 +1,256 @@
+<html>
+<head>
+<title>Shop</title>
+<style>
+.div1{
+	color:white;
+	background-color:black;
+	
+	font-style:italic;
+	font-size:75px;
+	text-align:center;
+	padding:20px;
+}
+body{
+	background-color:rgb(193,132,255);
+}
+.bar{
+	background-color:white;
+	height:60px;
+	font-size:20px;
+	border:2px solid black;
+}
+ul.a{
+	list-style-type:none;
+	
+}
+li.aa{
+	float:left;
+	padding-right:90px;
+	padding-left:45px;
+}
+.aw:hover .women{
+	color:red;
+	cursor:pointer;
+	display:block;
+}
+.women{
+	display:none;
+	padding:25px;
+	margin:0;
+	position:absolute;
+}
+.aw.hover: .women{
+	display:block;
+}
+.button{
+	border-style:1px solid black;
+	font-size:20px;
+	width:130px;
+	height:30px;
+}
+.button:hover{
+	background-color:yellow;
+	border: 1px solid red;
+	color:red;
+}
+.men{
+	display:none;
+	padding:25px;
+	position:absolute;
+	
+}
+.kid{
+	display:none;
+	padding:25px;
+	position:absolute;
+	
+}
+.home{
+	display:none;
+	padding:25px;
+	position:absolute;
+}
+.electronics{
+	display:none;
+	padding:25px;
+	position:absolute;
+	
+}
+.am:hover .men{
+	display:block;
+}
+.ak:hover .kid{
+	display:block;
+}
+.ah:hover .home{
+	display:block;
+}
+.ae:hover .electronics{
+	display:block;
+}
+.image{
+	width:300px;
+	height:330px;
+	border:2px solid rgb(220,10,163);
+}
+td{
+	background:linear-gradient(to right,rgb(0,255,255),rgb(119,255,255),rgb(255,255,255));
+	border:2px solid rgb(220,10,163);
+}
+td:hover{
+	box-shadow:0 0 5px rgb(134,112,64),0 0 10px rgb(255,255,0);
+	cursor:pointer;
+}
+table{
+	margin-left:35px;
+}
+.pagination{
+	display:inline-block;
+	margin-left:268px;
+}
+.pagination a{
+	text-decoration:none;
+	padding: 7px 13px;
+	float:left;
+	border-radius:5px;
+	background-color:white;
+	margin-left:80px;
+	border:1px solid white;
+	color:black;
+}
+.pagination a.active{
+	opacity: 0.8;
+}
+.pagination a:hover .active{
+	cursor:disable;
+}
+.pagination a:hover:not(.active){
+	background-color:rgb(0,255,0);
+	color:red;
+}
+</style>
+<script>
+function western(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><a href='w1.php'><img src='w1.jpg' alt='No' class='image'></img></a></td><td><img src='w2.jpg' alt='No' class='image'></img></td><td><img src='w3.jpg' alt='No' class='image'></img></td></tr><tr><td><img src='w4.jpg' alt='No' class='image'></img></td><td><img src='w5.jpg' alt='No' class='image'></img></td><td><img src='w6.jpg' alt='No' class='image'></img></td></tr><tr><td><img src='w7.jpg' alt='No' class='image'></img></td><td><img src='w8.jpg' alt='No' class='image'></img></td><td><img src='w9.jpg' alt='No' class='image'></img></td></tr><tr><td><img src='w10.jpg' alt='No' class='image'></img></td><td><img src='w11.jpg' alt='No' class='image'></img></td><td><img src='w12.jpg' alt='No' class='image'></img></td></tr></table><div class='pagination'><a href='#'>&laquo;</a><a href='#' class='active'>1</a><a href='Western2.html'>2</a><a href='Western3.html'>3</a><a href='Western2.html'>&raquo;</a></div>";
+}
+function indianl(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='i1.jpg' alt='No' class='image'></img></td><td><img src='i2.jpg' alt='No' class='image'></img></td><td><img src='i3.jpg' alt='No' class='image'></img></td></tr><tr><td><img src='i4.jpg' alt='No' class='image'></img></td><td><img src='i5.jpg' alt='No' class='image'></img></td><td><img src='i6.jpg' alt='No' class='image'></img></td></tr><tr><td><img src='i7.jpg' alt='No' class='image'></img></td><td><img src='i8.jpg' alt='No' class='image'></img></td><td><img src='i9.jpg' alt='No' class='image'></img></td></tr><tr><td><img src='i10.jpg' alt='No' class='image'></img></td><td><img src='i11.jpg' alt='No' class='image'></img></td><td><img src='i12.jpg' alt='No' class='image'></img></td></tr></table><div class='pagination'><a href='#'>&laquo;</a><a href='#' class='active'>1</a><a href='Indian2.html'>2</a><a href='Indian3.html'>3</a><a href='Indian2.html'>&raquo;</a></div>";
+}
+function party(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function nightl(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function suit(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function bottoms(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function indianm(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function nightm(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function boys(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function girls(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function winter(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function nightk(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function furniture(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function accessories(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function kitchen(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function decor(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function camera(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function speaker(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function ac(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+function mobile(){
+	document.getElementById("img").innerHTML="<table cellpadding='20' cellspacing='37'><tr><th></th><th></th><th></th></tr><tr><td><img src='a.jpg'></img></td><td></td><td></td></tr></table>";
+}
+
+</script>
+
+</head>
+<body>
+	<div class="div1"><b>Shoppe's</b></div><br>
+	<div class="bar">
+		<ul class="a">
+			<li class="aa aw">Women's
+			<div class="women">
+				<ul style="list-style-type:none;">
+				<li><button type="button" class="button" onclick="western();">Western</button></li>
+				<li><button class="button" onclick="indianl()">Indian</button></li>
+				<li><button class="button" onclick="party()">Party</button></li>
+				<li><button class="button" onclick="nightl()">Nightwear</button></li>
+				</ul>
+			</div>
+			</li>
+			<li class="aa am">Men's
+			<div class="men">
+				<ul style="list-style-type:none;">
+				<li><button class="button" onclick="suit()">Suits/Blazers</button></li>
+				<li><button class="button" onclick="indianm()">Indian</button></li>
+				<li><button class="button" onclick="bottoms()">Bottoms</button></li>
+				<li><button class="button" onclick="nightm()">Nightwear</button></li>
+				</ul>
+			</div>
+			</li>
+			<li class="aa ak">Kid's
+			<div class="kid">
+				<ul style="list-style-type:none;">
+				<li><button class="button" onclick="boys()">Boys</button></li>
+				<li><button class="button" onclick="girls()">Girls</button></li>
+				<li><button class="button" onclick="winter()">Winter</button></li>
+				<li><button class="button" onclick="nightk()">Nightwear</button></li>
+				</ul>
+			</div>
+			</li>
+			<li class="aa ah">Home & Decor
+			<div class="home">
+				<ul style="list-style-type:none;">
+				<li><button class="button" onclick="furniture()">Furniture</button></li>
+				<li><button class="button" onclick="accessories()">Accessories</button></li>
+				<li><button class="button" onclick="kitchen()">Kitchen</button></li>
+				<li><button class="button" onclick="decor()">Decor</button></li>
+				</ul>
+			</div>
+			</li>
+			<li class="aa ae">Electronics
+			<div class="electronics">
+				<ul style="list-style-type:none;">
+				<li><button class="button" onclick="camera()">Cameras</button ></li>
+				<li><button class="button" onclick="speaker()">Speakers</button></li>
+				<li><button class="button" onclick="ac()">A.C.</button></li>
+				<li><button class="button" onclick="mobile()">Mobiles</button></li>
+				</ul>
+			</div>
+			</li>
+		</ul>
+	</div>
+	<p id="img"></p>
+</body>
+</html>
